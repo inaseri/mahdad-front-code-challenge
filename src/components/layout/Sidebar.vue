@@ -5,6 +5,9 @@
 <template>
   <v-navigation-drawer>
     <v-list>
+      <router-link to="/">
+        <v-list-item title="Home"></v-list-item>
+      </router-link>
       <router-link to="/products">
         <v-list-item title="Shop"></v-list-item>
       </router-link>
