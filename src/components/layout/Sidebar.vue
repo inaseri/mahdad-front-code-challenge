@@ -11,6 +11,9 @@
       <router-link to="/checkout">
         <v-list-item title="Checkout"></v-list-item>
       </router-link>
+      <router-link to="/purchases">
+        <v-list-item title="Purchases"></v-list-item>
+      </router-link>
     </v-list>
   </v-navigation-drawer>
 </template>
