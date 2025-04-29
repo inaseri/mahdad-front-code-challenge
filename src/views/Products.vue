@@ -1,5 +1,7 @@
 <template>
   <div class="flex">
+    <h3 class="text-h3 color-danger-500">Shop Now!</h3>
+    <v-divider class="border-opacity-100 mt-2 mb-5" color="success"></v-divider>
     <div class="flex-column	" v-for="item of items" :key="item.id">
       <v-card class="mt-2" :title="item.name" :subtitle="item.category">
         <v-card-actions>

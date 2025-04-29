@@ -24,7 +24,7 @@ export const useCartStore = defineStore(
     }
 
     function removeFromCart(productId: string) {
-      const index = userCart.value.findIndex((el: Product) => el.id === productId)
+      const index = userCart.value.findIndex((el: Product) => el.id === productId && el.userId === String(user.value?.id))
       userCart.value.splice(index, 1)
     }
 

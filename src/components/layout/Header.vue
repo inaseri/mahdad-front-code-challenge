@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useThemeStore } from '@/stores/theme.ts'
-import { onMounted, ref, watch } from 'vue'
+import { ref } from 'vue'
 import UserSelect from '@/components/layout/UserSelect.vue'
 import { useCartStore } from '@/stores/cart.ts'
 
@@ -17,9 +17,10 @@ const changeFont = (event: string) => {
 <template>
   <v-app-bar :elevation="2">
     <template v-slot:prepend>
-      <v-badge :content="cartStore.getUserCart().length"           color="info"
-      >
-        <v-btn icon="mdi-cart-outline" color="purple"></v-btn>
+      <v-badge :content="cartStore.getUserCart().length" color="info">
+        <router-link to="/checkout">
+          <v-btn icon="mdi-cart-outline" color="purple"></v-btn>
+        </router-link>
       </v-badge>
     </template>
 
