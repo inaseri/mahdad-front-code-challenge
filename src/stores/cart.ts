@@ -20,7 +20,6 @@ export const useCartStore = defineStore(
     function addToCart(data: Product) {
       data.userId = String(user.value?.id)
       userCart.value.push(data)
-      console.log(userCart)
     }
 
     function removeFromCart(productId: string) {
