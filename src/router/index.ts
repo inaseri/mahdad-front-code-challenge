@@ -9,7 +9,12 @@ const router = createRouter({
       name: 'index',
       component: () => import('../views/HomeView.vue'),
       meta: { layout: Main },
-
+    },
+    {
+      path: '/products',
+      name: 'products',
+      component: () => import('../views/Products.vue'),
+      meta: { layout: Main },
     },
   ],
 })
