@@ -28,6 +28,12 @@ const router = createRouter({
       component: () => import('../views/Purchases.vue'),
       meta: { layout: Main },
     },
+    {
+      path: '/logs',
+      name: 'logs',
+      component: () => import('../views/Logs.vue'),
+      meta: { layout: Main },
+    },
   ],
 })
 
