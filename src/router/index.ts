@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Main from '@/layouts/main.vue'
+import App from '@/layouts/app.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,12 @@ const router = createRouter({
       name: 'user-info',
       component: () => import('../views/UserInfo.vue'),
       meta: { layout: Main },
+    },
+    {
+      path: '/app-layout',
+      name: 'app-layout',
+      component: () => import('../views/AppLayout.vue'),
+      meta: { layout: App },
     },
   ],
 })

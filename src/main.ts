@@ -1,7 +1,8 @@
 import './assets/main.css'
-import 'vuetify/styles'
+import './assets/tailwind.css'
 import '@mdi/font/css/materialdesignicons.css'
 import 'vue3-toastify/dist/index.css';
+import 'vuetify/styles'
 
 import piniaPersist from 'pinia-plugin-persistedstate'
 import Vue3Toastify, { type ToastContainerOptions } from 'vue3-toastify';

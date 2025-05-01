@@ -23,6 +23,9 @@
       <router-link to="/user-info">
         <v-list-item title="User Info"></v-list-item>
       </router-link>
+      <router-link to="/app-layout">
+        <v-list-item title="App Layout"></v-list-item>
+      </router-link>
     </v-list>
   </v-navigation-drawer>
 </template>
