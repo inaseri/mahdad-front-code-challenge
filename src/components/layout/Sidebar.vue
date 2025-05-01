@@ -20,6 +20,9 @@
       <router-link to="/logs">
         <v-list-item title="Logs"></v-list-item>
       </router-link>
+      <router-link to="/user-info">
+        <v-list-item title="User Info"></v-list-item>
+      </router-link>
     </v-list>
   </v-navigation-drawer>
 </template>

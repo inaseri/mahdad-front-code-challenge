@@ -34,6 +34,12 @@ const router = createRouter({
       component: () => import('../views/Logs.vue'),
       meta: { layout: Main },
     },
+    {
+      path: '/user-info',
+      name: 'user-info',
+      component: () => import('../views/UserInfo.vue'),
+      meta: { layout: Main },
+    },
   ],
 })
 
